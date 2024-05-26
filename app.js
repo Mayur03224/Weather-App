@@ -1,4 +1,6 @@
-const API_KEY = "031939e6ecdb70228e8e25afdf70578c";
+import { secret } from "./secret.js";
+
+const API_KEY = secret || "Add-here-your-secret-key-of-open-weather-map-api";
 const BASE_URL = "https://api.openweathermap.org/data/2.5/weather?";
 
 const cityName = document.getElementById("cityName");
